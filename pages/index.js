@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">Hi. I'm Nick Tobolski.</h1>
+        <h1 className="title">Nick Tobolski</h1>
 
         <p className="description">
           A software engineer with a passion for creating intuitive and powerful
