@@ -1,40 +1,27 @@
 import Head from "next/head";
 
-export default function Home() {
+export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Nick Tobolski</title>
+        <title>Projects ))${"<>"}(( Nick Tobolski</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">Nick Tobolski</h1>
-
-        <p className="description">
-          A software engineer with a passion for creating intuitive and powerful
-          tools that enable{" "}
-          <a href="https://en.wikipedia.org/wiki/Human">Humankind</a>.
-        </p>
+        <h1 className="title">Projects</h1>
 
         <div className="grid">
-          <a href="/projects" className="card">
-            <h3>Projects &rarr;</h3>
-            <p>A smattering of side projects just for fun</p>
+          <a href="https://pollinator.emrgnt.co/" className="card">
+            <h3>Pollinator Relationships &rarr;</h3>
+            <p>
+              A tool for exploring visual relationships between pollinators and
+              their flowers.
+            </p>
           </a>
-          <a href="https://www.linkedin.com/in/ntobolski/" className="card">
-            <h3>LinkedIn &rarr;</h3>
-            <p>Say what's up, I guess (what do people use this for)</p>
-          </a>
-
-          <a href="https://github.com/nicktobolski" className="card">
-            <h3>Github &rarr;</h3>
-            <p>Not much on here really but there it is</p>
-          </a>
-
-          <a href="https://twitter.com/nicktobolski" className="card">
-            <h3>Twitter &rarr;</h3>
-            <p>I randomly work up the confidence to tweet to no one</p>
+          <a href="https://ilikefarts.com" className="card">
+            <h3>ILikeFarts.com &rarr;</h3>
+            <p>Self explanatory.</p>
           </a>
         </div>
       </main>
@@ -131,7 +118,7 @@ export default function Home() {
 
         .card {
           margin: 1rem;
-          flex-basis: 45%;
+          flex-basis: 100%;
           padding: 1.5rem;
           text-align: left;
           color: inherit;
