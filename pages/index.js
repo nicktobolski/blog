@@ -6,6 +6,17 @@ export default function Home() {
       <Head>
         <title>Nick Tobolski</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          property="og:title"
+          content="Nick Tobolski - Human, Software Engineer"
+          key="title"
+        />
+        <meta
+          name="description"
+          property="og:description"
+          content="Professional Portfolio site of Nick Tobolski"
+          key="desc"
+        />
       </Head>
 
       <main>
@@ -19,21 +30,21 @@ export default function Home() {
 
         <div className="grid">
           <a href="/projects" className="card">
-            <h3>Projects &rarr;</h3>
+            <h2>Projects &rarr;</h2>
             <p>A smattering of side projects just for fun</p>
           </a>
           <a href="https://www.linkedin.com/in/ntobolski/" className="card">
-            <h3>LinkedIn &rarr;</h3>
+            <h2>LinkedIn &rarr;</h2>
             <p>Say what's up, I guess (what do people use this for)</p>
           </a>
 
           <a href="https://github.com/nicktobolski" className="card">
-            <h3>Github &rarr;</h3>
+            <h2>Github &rarr;</h2>
             <p>Not much on here really but there it is</p>
           </a>
 
           <a href="https://twitter.com/nicktobolski" className="card">
-            <h3>Twitter &rarr;</h3>
+            <h2>Twitter &rarr;</h2>
             <p>I randomly work up the confidence to tweet to no one</p>
           </a>
         </div>
@@ -148,7 +159,7 @@ export default function Home() {
           border-color: #0070f3;
         }
 
-        .card h3 {
+        .card h2 {
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }

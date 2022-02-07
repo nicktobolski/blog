@@ -4,7 +4,18 @@ export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Projects ))${"<>"}(( Nick Tobolski</title>
+        <title>Projects )){"<>"}(( Nick Tobolski</title>
+        <meta
+          property="og:title"
+          content="Projects of Nick Tobolski"
+          key="title"
+        />
+        <meta
+          name="description"
+          property="og:description"
+          content="Miscellaneous Musing"
+          key="desc"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -13,14 +24,14 @@ export default function Projects() {
 
         <div className="grid">
           <a href="https://pollinator.emrgnt.co/" className="card">
-            <h3>Pollinator Relationships &rarr;</h3>
+            <h2>Pollinator Relationships &rarr;</h2>
             <p>
               A tool for exploring visual relationships between pollinators and
               their flowers.
             </p>
           </a>
           <a href="https://ilikefarts.com" className="card">
-            <h3>ILikeFarts.com &rarr;</h3>
+            <h2>ILikeFarts.com &rarr;</h2>
             <p>Self explanatory.</p>
           </a>
         </div>
