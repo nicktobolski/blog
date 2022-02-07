@@ -1,6 +1,12 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
+import { useMixpanel } from "../contexts/mixpanel.context";
 
 export default function Projects() {
+  const mixpanel = useMixpanel();
+  useEffect(() => {
+    mixpanel.track("Projects page loaded");
+  }, [mixpanel]);
   return (
     <div className="container">
       <Head>
@@ -23,14 +29,24 @@ export default function Projects() {
         <h1 className="title">Projects</h1>
 
         <div className="grid">
-          <a href="https://pollinator.emrgnt.co/" className="card">
+          <a
+            href="https://pollinator.emrgnt.co/"
+            className="card"
+            onClick={() => mixpanel.track("Project Click: Pollinators")}
+            target="_blank"
+          >
             <h2>Pollinator Relationships &rarr;</h2>
             <p>
               A tool for exploring visual relationships between pollinators and
               their flowers.
             </p>
           </a>
-          <a href="https://ilikefarts.com" className="card">
+          <a
+            href="https://ilikefarts.com"
+            className="card"
+            onClick={() => mixpanel.track("Project Click: Farts")}
+            target="_blank"
+          >
             <h2>ILikeFarts.com &rarr;</h2>
             <p>Self explanatory.</p>
           </a>

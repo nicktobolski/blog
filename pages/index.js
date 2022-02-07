@@ -1,6 +1,12 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
+import { useMixpanel } from "../contexts/mixpanel.context";
 
 export default function Home() {
+  const mixpanel = useMixpanel();
+  useEffect(() => {
+    mixpanel.track("Home page loaded");
+  }, [mixpanel]);
   return (
     <div className="container">
       <Head>
@@ -33,17 +39,32 @@ export default function Home() {
             <h2>Projects &rarr;</h2>
             <p>A smattering of side projects just for fun</p>
           </a>
-          <a href="https://www.linkedin.com/in/ntobolski/" className="card">
+          <a
+            href="https://www.linkedin.com/in/ntobolski/"
+            className="card"
+            target="_blank"
+            onClick={() => mixpanel.track("Social Click: LinkedIn")}
+          >
             <h2>LinkedIn &rarr;</h2>
             <p>Say what's up, I guess (what do people use this for)</p>
           </a>
 
-          <a href="https://github.com/nicktobolski" className="card">
+          <a
+            href="https://github.com/nicktobolski"
+            className="card"
+            target="_blank"
+            onClick={() => mixpanel.track("Social Click: GitHub")}
+          >
             <h2>Github &rarr;</h2>
             <p>Not much on here really but there it is</p>
           </a>
 
-          <a href="https://twitter.com/nicktobolski" className="card">
+          <a
+            href="https://twitter.com/nicktobolski"
+            className="card"
+            target="_blank"
+            onClick={() => mixpanel.track("Social Click: Twitter")}
+          >
             <h2>Twitter &rarr;</h2>
             <p>I randomly work up the confidence to tweet to no one</p>
           </a>
