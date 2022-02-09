@@ -6,6 +6,9 @@ export default function Home() {
   const mixpanel = useMixpanel();
   useEffect(() => {
     mixpanel.track("Home page loaded");
+    analytics.track("Page load", {
+      title: window.title,
+    });
   }, [mixpanel]);
   return (
     <div className="container">
@@ -31,7 +34,18 @@ export default function Home() {
         <p className="description">
           A software engineer with a passion for creating intuitive and powerful
           tools that enable{" "}
-          <a href="https://en.wikipedia.org/wiki/Human">Humankind</a>.
+          <a
+            href="https://en.wikipedia.org/wiki/Human"
+            onClick={() => {
+              mixpanel.track("Info Click: Info Click");
+              analytics.track("Info Click", {
+                property: "Info Click",
+              });
+            }}
+          >
+            Humankind
+          </a>
+          .
         </p>
 
         <div className="grid">
@@ -43,7 +57,12 @@ export default function Home() {
             href="https://www.linkedin.com/in/ntobolski/"
             className="card"
             target="_blank"
-            onClick={() => mixpanel.track("Social Click: LinkedIn")}
+            onClick={() => {
+              mixpanel.track("Social Click: LinkedIn");
+              analytics.track("Social Click", {
+                property: "LinkedIn",
+              });
+            }}
           >
             <h2>LinkedIn &rarr;</h2>
             <p>Say what's up, I guess (what do people use this for)</p>
@@ -53,7 +72,12 @@ export default function Home() {
             href="https://github.com/nicktobolski"
             className="card"
             target="_blank"
-            onClick={() => mixpanel.track("Social Click: GitHub")}
+            onClick={() => {
+              mixpanel.track("Social Click: GitHub");
+              analytics.track("Social Click", {
+                property: "GitHub",
+              });
+            }}
           >
             <h2>Github &rarr;</h2>
             <p>Not much on here really but there it is</p>
@@ -63,7 +87,12 @@ export default function Home() {
             href="https://twitter.com/nicktobolski"
             className="card"
             target="_blank"
-            onClick={() => mixpanel.track("Social Click: Twitter")}
+            onClick={() => {
+              mixpanel.track("Social Click: Twitter");
+              analytics.track("Social Click", {
+                property: "Twitter",
+              });
+            }}
           >
             <h2>Twitter &rarr;</h2>
             <p>I randomly work up the confidence to tweet to no one</p>

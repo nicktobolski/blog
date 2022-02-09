@@ -6,6 +6,9 @@ export default function Projects() {
   const mixpanel = useMixpanel();
   useEffect(() => {
     mixpanel.track("Projects page loaded");
+    analytics.track("Page load", {
+      title: window.title,
+    });
   }, [mixpanel]);
   return (
     <div className="container">
