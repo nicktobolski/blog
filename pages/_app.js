@@ -20,9 +20,9 @@ function renderSnippet() {
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      {process.env.ENVIRONMENT !== "development" && (
+      {process.env.NODE_ENV !== "development" && (
         <>
-          <FullStory org={process.env.NEXT_PUBLIC_FULL_STORY_ORG_ID} />
+          {/* <FullStory org={process.env.NEXT_PUBLIC_FULL_STORY_ORG_ID} /> */}
         </>
       )}
       <Script
