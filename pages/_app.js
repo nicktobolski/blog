@@ -2,6 +2,7 @@ import React from "react";
 import { MixpanelProvider } from "../contexts/mixpanel.context";
 import Script from "next/script";
 import * as snippet from "@segment/snippet";
+import FullStory from "react-fullstory";
 function renderSnippet() {
   const opts = {
     apiKey: process.env.NEXT_PUBLIC_SEGMENT_WRITE_KEY || "DEFAULT_WRITE_KEY",
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }) {
         id="segment-script"
         dangerouslySetInnerHTML={{ __html: renderSnippet() }}
       />
+      <FullStory org={process.env.NEXT_PUBLIC_FULL_STORY_ORG_ID} />
       <MixpanelProvider>
         <Component {...pageProps} />
       </MixpanelProvider>

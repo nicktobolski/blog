@@ -12,6 +12,7 @@
     "mixpanel-browser": "^2.43.0",
     "next": "^12.0.10",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-fullstory": "^1.4.0"
   }
 }

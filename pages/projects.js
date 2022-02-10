@@ -7,7 +7,7 @@ export default function Projects() {
   useEffect(() => {
     mixpanel.track("Projects page loaded");
     analytics.track("Page load", {
-      title: window.title,
+      title: "Projects",
     });
   }, [mixpanel]);
   return (

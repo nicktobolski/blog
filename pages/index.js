@@ -7,7 +7,7 @@ export default function Home() {
   useEffect(() => {
     mixpanel.track("Home page loaded");
     analytics.track("Page load", {
-      title: window.title,
+      title: "Home page",
     });
   }, [mixpanel]);
   return (
@@ -39,7 +39,7 @@ export default function Home() {
             onClick={() => {
               mixpanel.track("Info Click: Info Click");
               analytics.track("Info Click", {
-                property: "Info Click",
+                property: "Humankind",
               });
             }}
           >
