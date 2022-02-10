@@ -20,11 +20,15 @@ function renderSnippet() {
 function MyApp({ Component, pageProps }) {
   return (
     <div>
+      {process.env.ENVIRONMENT !== "development" && (
+        <>
+          <FullStory org={process.env.NEXT_PUBLIC_FULL_STORY_ORG_ID} />
+        </>
+      )}
       <Script
         id="segment-script"
         dangerouslySetInnerHTML={{ __html: renderSnippet() }}
       />
-      <FullStory org={process.env.NEXT_PUBLIC_FULL_STORY_ORG_ID} />
       <MixpanelProvider>
         <Component {...pageProps} />
       </MixpanelProvider>
