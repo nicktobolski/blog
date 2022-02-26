@@ -32,7 +32,7 @@ export default function Home() {
         <h1 className="title">Nick Tobolski</h1>
 
         <p className="description">
-          A software engineer with a passion for creating intuitive and powerful
+          A software engineer with a passion for creating intuitive and powerful{" "}
           <a href="https://en.wikipedia.org/wiki/Tool" target="_blank">tools</a> that enable{" "}
           <a
             href="https://en.wikipedia.org/wiki/Human"
