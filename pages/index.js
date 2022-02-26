@@ -23,7 +23,7 @@ export default function Home() {
         <meta
           name="description"
           property="og:description"
-          content="Professional Portfolio site of Nick Tobolski"
+          content="Personal site of Nick Tobolski"
           key="desc"
         />
       </Head>
@@ -33,7 +33,7 @@ export default function Home() {
 
         <p className="description">
           A software engineer with a passion for creating intuitive and powerful
-          tools that enable{" "}
+          <a href="https://en.wikipedia.org/wiki/Tool" target="_blank">tools</a> that enable{" "}
           <a
             href="https://en.wikipedia.org/wiki/Human"
             onClick={() => {
