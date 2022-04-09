@@ -59,8 +59,8 @@ export default function Projects() {
             onClick={() => mixpanel.track("Project Click: Frames")}
           >
             <>
-              <h2>Framing &rarr;</h2>
-              <p>Configuring the lenses of reality</p>
+              <h2>Frames &rarr;</h2>
+              <p>Lens configs.</p>
             </>
           </a>
         </div>

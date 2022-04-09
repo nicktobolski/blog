@@ -158,6 +158,7 @@ export default function Projects() {
           text-align: left;
           width: 100%;
           font-weight: 300;
+          line-height: 156%;
         }
       `}</style>
 
