@@ -5,64 +5,40 @@ import { useMixpanel } from "../contexts/mixpanel.context";
 export default function Projects() {
   const mixpanel = useMixpanel();
   useEffect(() => {
-    mixpanel.track("Projects page loaded");
+    mixpanel.track("Frames page loaded");
     analytics.track("Page load", {
-      title: "Projects",
+      title: "Frames",
     });
   }, [mixpanel]);
   return (
     <div className="container">
       <Head>
-        <title>Projects )){"<>"}(( Nick Tobolski</title>
+        <title>Frames ∞ Nick Tobolski</title>
         <meta
           property="og:title"
-          content="Projects of Nick Tobolski"
+          content="Content of Nick Tobolski"
           key="title"
         />
         <meta
           name="description"
           property="og:description"
-          content="Miscellaneous Musing"
+          content="Just things"
           key="desc"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">Projects</h1>
+        <h1 className="title">Frames</h1>
 
         <div className="grid">
-          <a
-            href="https://pollinator.emrgnt.co/"
-            className="card"
-            onClick={() => mixpanel.track("Project Click: Pollinators")}
-            target="_blank"
-          >
-            <h2>Pollinator Relationships &rarr;</h2>
-            <p>
-              A tool for exploring visual relationships between pollinators and
-              their flowers.
-            </p>
-          </a>
-          <a
-            href="https://ilikefarts.com"
-            className="card"
-            onClick={() => mixpanel.track("Project Click: Farts")}
-            target="_blank"
-          >
-            <h2>ILikeFarts.com &rarr;</h2>
-            <p>Self explanatory.</p>
-          </a>
-          <a
-            href="/frames"
-            className="card"
-            onClick={() => mixpanel.track("Project Click: Frames")}
-          >
-            <>
-              <h2>Framing &rarr;</h2>
-              <p>Configuring the lenses of reality</p>
-            </>
-          </a>
+          <blockquote>
+            I am in the right place at the right time, doing the right thing.
+          </blockquote>
+          <blockquote>
+            Only that day dawns to which we are awake. There is more day to
+            dawn. The sun is but a morning star.
+          </blockquote>
         </div>
       </main>
 
@@ -83,25 +59,6 @@ export default function Projects() {
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
           justify-content: center;
           align-items: center;
         }
@@ -195,6 +152,12 @@ export default function Projects() {
             width: 100%;
             flex-direction: column;
           }
+        }
+        blockquote {
+          font-size: 1.5em;
+          text-align: left;
+          width: 100%;
+          font-weight: 300;
         }
       `}</style>
 
