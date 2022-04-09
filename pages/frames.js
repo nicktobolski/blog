@@ -34,10 +34,36 @@ export default function Projects() {
         <div className="grid">
           <blockquote>
             I am in the right place at the right time, doing the right thing.
+            <cite>Louise Hay</cite>
           </blockquote>
           <blockquote>
             Only that day dawns to which we are awake. There is more day to
             dawn. The sun is but a morning star.
+            <cite>HDT</cite>
+          </blockquote>
+          <blockquote>
+            Now, while the blood is hot, we must enter with brisk step upon the better course.
+            <cite>Seneca</cite>
+          </blockquote>
+          <blockquote>
+            The reasonable man adapts himself to the world: the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.
+            <cite>George Bernard Shaw</cite>
+          </blockquote>
+          <blockquote>
+            Love the earth and sun and the animals, despise riches, give alms to every one that asks, stand up for the stupid and crazy, devote your income and labor to others, hate tyrants, argue not concerning God, have patience and indulgence toward the people, take off your hat to nothing known or unknown or to any man or number of men, go freely with powerful uneducated persons and with the young and with the mothers of families, read these leaves in the open air every season of every year of your life, re-examine all you have been told at school or church or in any book, dismiss whatever insults your own soul, and your very flesh shall be a great poem and have the richest fluency not only in its words but in the silent lines of its lips and face and between the lashes of your eyes and in every motion and joint of your body.
+            <cite>Whitman</cite>
+          </blockquote>
+          <blockquote>
+            Live in the sunshine, swim the sea, drink the wild air. Nothing great was ever achieved without enthusiasm.
+            <cite>Ralph Waldo Emerson</cite>
+          </blockquote>
+          <blockquote>
+            We are made for goodness. We are made for love. We are made for friendliness. We are made for togetherness. We are made for all of the beautiful things that you and I know. We are made to tell the world that there are no outsiders. All are welcome; black, white, red, yellow, rich, poor, educated, not educated, male, female, gay, straight, all, all, all. We ALL belong to this family, this human family[.]
+            <cite>Desmond Tutu</cite>
+          </blockquote>
+          <blockquote>
+            Be soft. Do not let the world make you hard. Do not let pain make you hate. Do not let the bitterness steal your sweetness.
+            <cite>Kurt Vonnegut</cite>
           </blockquote>
         </div>
       </main>
