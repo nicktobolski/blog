@@ -32,6 +32,10 @@ export default function Projects() {
         <h1 className="title">Frames</h1>
 
         <div className="grid">
+           <blockquote>
+           The first principal is that you must not fool yourself - and you're the easiest person to fool.
+            <cite>Richard Feynman</cite>
+          </blockquote>
           <blockquote>
             I am in the right place at the right time, doing the right thing.
             <cite>Louise Hay</cite>
