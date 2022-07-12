@@ -32,8 +32,9 @@ export default function Projects() {
         <h1 className="title">Frames</h1>
 
         <div className="grid">
-           <blockquote>
-           The first principal is that you must not fool yourself - and you're the easiest person to fool.
+          <blockquote>
+            The first principal is that you must not fool yourself - and you're
+            the easiest person to fool.
             <cite>Richard Feynman</cite>
           </blockquote>
           <blockquote>
@@ -46,27 +47,50 @@ export default function Projects() {
             <cite>HDT</cite>
           </blockquote>
           <blockquote>
-            Now, while the blood is hot, we must enter with brisk step upon the better course.
+            Now, while the blood is hot, we must enter with brisk step upon the
+            better course.
             <cite>Seneca</cite>
           </blockquote>
           <blockquote>
-            The reasonable man adapts himself to the world: the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.
+            The reasonable man adapts himself to the world: the unreasonable one
+            persists in trying to adapt the world to himself. Therefore all
+            progress depends on the unreasonable man.
             <cite>George Bernard Shaw</cite>
           </blockquote>
           <blockquote>
-            Love the earth and sun and the animals, despise riches, give alms to every one that asks, stand up for the stupid and crazy, devote your income and labor to others, hate tyrants, argue not concerning God, have patience and indulgence toward the people, take off your hat to nothing known or unknown or to any man or number of men, go freely with powerful uneducated persons and with the young and with the mothers of families, read these leaves in the open air every season of every year of your life, re-examine all you have been told at school or church or in any book, dismiss whatever insults your own soul, and your very flesh shall be a great poem and have the richest fluency not only in its words but in the silent lines of its lips and face and between the lashes of your eyes and in every motion and joint of your body.
+            Love the earth and sun and the animals, despise riches, give alms to
+            every one that asks, stand up for the stupid and crazy, devote your
+            income and labor to others, hate tyrants, argue not concerning God,
+            have patience and indulgence toward the people, take off your hat to
+            nothing known or unknown or to any man or number of men, go freely
+            with powerful uneducated persons and with the young and with the
+            mothers of families, read these leaves in the open air every season
+            of every year of your life, re-examine all you have been told at
+            school or church or in any book, dismiss whatever insults your own
+            soul, and your very flesh shall be a great poem and have the richest
+            fluency not only in its words but in the silent lines of its lips
+            and face and between the lashes of your eyes and in every motion and
+            joint of your body.
             <cite>Whitman</cite>
           </blockquote>
           <blockquote>
-            Live in the sunshine, swim the sea, drink the wild air. Nothing great was ever achieved without enthusiasm.
+            Live in the sunshine, swim the sea, drink the wild air. Nothing
+            great was ever achieved without enthusiasm.
             <cite>Ralph Waldo Emerson</cite>
           </blockquote>
           <blockquote>
-            We are made for goodness. We are made for love. We are made for friendliness. We are made for togetherness. We are made for all of the beautiful things that you and I know. We are made to tell the world that there are no outsiders. All are welcome; black, white, red, yellow, rich, poor, educated, not educated, male, female, gay, straight, all, all, all. We ALL belong to this family, this human family[.]
+            We are made for goodness. We are made for love. We are made for
+            friendliness. We are made for togetherness. We are made for all of
+            the beautiful things that you and I know. We are made to tell the
+            world that there are no outsiders. All are welcome; black, white,
+            red, yellow, rich, poor, educated, not educated, male, female, gay,
+            straight, all, all, all. We ALL belong to this family, this human
+            family[.]
             <cite>Desmond Tutu</cite>
           </blockquote>
           <blockquote>
-            Be soft. Do not let the world make you hard. Do not let pain make you hate. Do not let the bitterness steal your sweetness.
+            Be soft. Do not let the world make you hard. Do not let pain make
+            you hate. Do not let the bitterness steal your sweetness.
             <cite>Kurt Vonnegut</cite>
           </blockquote>
         </div>
@@ -189,6 +213,15 @@ export default function Projects() {
           width: 100%;
           font-weight: 300;
           line-height: 156%;
+        }
+        cite {
+          display: inline-block;
+          padding-left: 0.5em;
+          opacity: 0.5;
+        }
+        cite::before {
+          content: " — ";
+          padding-right: 0.25em;
         }
       `}</style>
 
