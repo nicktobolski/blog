@@ -44,7 +44,7 @@ export default function Projects() {
               their flowers.
             </p>
           </a>
-          <a
+          {/* <a
             href="https://ilikefarts.com"
             className="card"
             onClick={() => mixpanel.track("Project Click: Farts")}
@@ -52,7 +52,7 @@ export default function Projects() {
           >
             <h2>ILikeFarts.com &rarr;</h2>
             <p>Self explanatory.</p>
-          </a>
+          </a> */}
           <a
             href="/frames"
             className="card"
@@ -65,8 +65,6 @@ export default function Projects() {
           </a>
         </div>
       </main>
-
-      <footer></footer>
 
       <style jsx>{`
         .container {

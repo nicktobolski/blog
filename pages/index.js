@@ -33,7 +33,10 @@ export default function Home() {
 
         <p className="description">
           A software engineer with a passion for creating intuitive and powerful{" "}
-          <a href="https://en.wikipedia.org/wiki/Tool" target="_blank">tools</a> that enable{" "}
+          <a href="https://en.wikipedia.org/wiki/Tool" target="_blank">
+            tools
+          </a>{" "}
+          that enable{" "}
           <a
             href="https://en.wikipedia.org/wiki/Human"
             onClick={() => {
@@ -50,8 +53,8 @@ export default function Home() {
 
         <div className="grid">
           <a href="/projects" className="card">
-            <h2>Projects &rarr;</h2>
-            <p>A smattering of side projects just for fun</p>
+            <h2>Side Projects &rarr;</h2>
+            <p>Just for fun</p>
           </a>
           <a
             href="https://www.linkedin.com/in/ntobolski/"
@@ -65,7 +68,7 @@ export default function Home() {
             }}
           >
             <h2>LinkedIn &rarr;</h2>
-            <p>Say what's up, I guess (what do people use this for)</p>
+            <p>Say hi</p>
           </a>
 
           <a
@@ -80,11 +83,10 @@ export default function Home() {
             }}
           >
             <h2>Github &rarr;</h2>
-            <p>Not much on here really but there it is</p>
+            <p>It's pretty random honestly</p>
           </a>
 
-          <a
-            href="https://twitter.com/nicktobolski"
+          <div
             className="card"
             target="_blank"
             onClick={() => {
@@ -94,13 +96,15 @@ export default function Home() {
               });
             }}
           >
-            <h2>Twitter &rarr;</h2>
-            <p>I randomly work up the confidence to tweet to no one</p>
-          </a>
+            <h2>Blog &rarr;</h2>
+            <p>Coming soon!</p>
+          </div>
         </div>
       </main>
 
-      <footer></footer>
+      <footer>
+        <b className="wip">WIP</b>
+      </footer>
 
       <style jsx>{`
         .container {
@@ -170,6 +174,10 @@ export default function Home() {
           max-width: 800px;
           margin-top: 3rem;
         }
+        .wip {
+          font-weight: bold;
+          color: #ccc;
+        }
 
         .card {
           margin: 1rem;
@@ -183,9 +191,9 @@ export default function Home() {
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
+        a.card:hover,
+        a.card:focus,
+        a.card:active {
           color: #0070f3;
           border-color: #0070f3;
         }
