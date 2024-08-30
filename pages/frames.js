@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 
 export default function Projects() {
@@ -14,7 +14,7 @@ export default function Projects() {
         <meta
           name="description"
           property="og:description"
-          content="Just things"
+          content="A selection of carefully curated quotes from thoughtful thinkers"
           key="desc"
         />
         <link rel="icon" href="/favicon.ico" />
