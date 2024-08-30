@@ -27,7 +27,6 @@ export default function Projects() {
           <a
             href="https://pollinator.emrgnt.co/"
             className="card"
-            onClick={() => mixpanel.track("Project Click: Pollinators")}
             target="_blank"
           >
             <h2>Pollinator Relationships &rarr;</h2>
@@ -37,11 +36,7 @@ export default function Projects() {
             </p>
           </a>
           {/* <a
-            href="https://ilikefarts.com"
-            className="card"
-            onClick={() => mixpanel.track("Project Click: Farts")}
-            target="_blank"
-          >
+
             <h2>ILikeFarts.com &rarr;</h2>
             <p>Self explanatory.</p>
           </a> */}

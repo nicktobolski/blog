@@ -29,18 +29,7 @@ export default function Home() {
             tools
           </a>{" "}
           that enable{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/Human"
-            onClick={() => {
-              mixpanel.track("Info Click: Info Click");
-              analytics.track("Info Click", {
-                property: "Humankind",
-              });
-            }}
-          >
-            Humankind
-          </a>
-          .
+          <a href="https://en.wikipedia.org/wiki/Human">Humankind</a>.
         </p>
 
         <div className="grid">
@@ -52,12 +41,6 @@ export default function Home() {
             href="https://www.linkedin.com/in/ntobolski/"
             className="card"
             target="_blank"
-            onClick={() => {
-              mixpanel.track("Social Click: LinkedIn");
-              analytics.track("Social Click", {
-                property: "LinkedIn",
-              });
-            }}
           >
             <h2>LinkedIn &rarr;</h2>
             <p>Say hi</p>
@@ -67,27 +50,12 @@ export default function Home() {
             href="https://github.com/nicktobolski"
             className="card"
             target="_blank"
-            onClick={() => {
-              mixpanel.track("Social Click: GitHub");
-              analytics.track("Social Click", {
-                property: "GitHub",
-              });
-            }}
           >
             <h2>Github &rarr;</h2>
             <p>It's pretty random honestly</p>
           </a>
 
-          <div
-            className="card"
-            target="_blank"
-            onClick={() => {
-              mixpanel.track("Social Click: Twitter");
-              analytics.track("Social Click", {
-                property: "Twitter",
-              });
-            }}
-          >
+          <div className="card" target="_blank">
             <h2>Blog &rarr;</h2>
             <p>Coming soon!</p>
           </div>
