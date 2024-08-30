@@ -1,5 +1,4 @@
 import React from "react";
-import { MixpanelProvider } from "../contexts/mixpanel.context";
 import Script from "next/script";
 import * as snippet from "@segment/snippet";
 import FullStory from "react-fullstory";
@@ -29,9 +28,7 @@ function MyApp({ Component, pageProps }) {
         id="segment-script"
         dangerouslySetInnerHTML={{ __html: renderSnippet() }}
       />
-      <MixpanelProvider>
-        <Component {...pageProps} />
-      </MixpanelProvider>
+      <Component {...pageProps} />
     </div>
   );
 }
