@@ -1,65 +1,43 @@
 import React from "react";
 import Head from "next/head";
 
-export default function Home() {
+export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Nick Tobolski</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Words {"∞"} Nick Tobolski</title>
         <meta
           property="og:title"
-          content="Nick Tobolski ∞ Human, Software Engineer"
+          content="Words shared by Nick Tobolski"
           key="title"
         />
         <meta
           name="description"
           property="og:description"
-          content="Personal site of Nick Tobolski, Extraodinaire"
+          content="Miscellaneous Musing"
           key="desc"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">Nick Tobolski</h1>
-
-        <p className="description">
-          A software engineer with a passion for creating intuitive and powerful{" "}
-          <a href="/tools">tools</a> that enable{" "}
-          <a href="https://en.wikipedia.org/wiki/Human">Humankind</a>.
-        </p>
+        <h1 className="title">Words</h1>
 
         <div className="grid">
-          <a href="/projects" className="card">
-            <h2>Projects &rarr;</h2>
-            <p>Explorations in code.</p>
+          <a href="/tools" className="card">
+            <>
+              <h2>Tools and Their Creation &rarr;</h2>
+              <p>An essay on well-designed tools.</p>
+            </>
           </a>
-          <a href="/words" className="card">
-            <h2>Words &rarr;</h2>
-            <p>With an appreciation for brevity.</p>
-          </a>
-          <a
-            href="https://github.com/nicktobolski"
-            className="card"
-            target="_blank"
-          >
-            <h2>Github &rarr;</h2>
-            <p>It's pretty random honestly</p>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ntobolski/"
-            className="card"
-            target="_blank"
-          >
-            <h2>LinkedIn &rarr;</h2>
-            <p>Say hello</p>
+          <a href="/frames" className="card">
+            <>
+              <h2>Frames &amp; Lenses &rarr;</h2>
+              <p>A collection of some of my favorite quotes.</p>
+            </>
           </a>
         </div>
       </main>
-
-      <footer>
-        <b className="wip">WIP</b>
-      </footer>
 
       <style jsx>{`
         .container {
@@ -129,14 +107,10 @@ export default function Home() {
           max-width: 800px;
           margin-top: 3rem;
         }
-        .wip {
-          font-weight: bold;
-          color: #ccc;
-        }
 
         .card {
           margin: 1rem;
-          flex-basis: 45%;
+          flex-basis: 100%;
           padding: 1.5rem;
           text-align: left;
           color: inherit;
@@ -146,14 +120,14 @@ export default function Home() {
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
-        a.card:hover,
-        a.card:focus,
-        a.card:active {
+        .card:hover,
+        .card:focus,
+        .card:active {
           color: #0070f3;
           border-color: #0070f3;
         }
 
-        .card h2 {
+        .card h3 {
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }

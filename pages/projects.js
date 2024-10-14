@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Projects )){"<>"}(( Nick Tobolski</title>
+        <title>Projects {"∞"} Nick Tobolski</title>
         <meta
           property="og:title"
           content="Projects of Nick Tobolski"
@@ -35,20 +35,11 @@ export default function Projects() {
               their flowers.
             </p>
           </a>
-          {/* <a
-
-            <h2>ILikeFarts.com &rarr;</h2>
-            <p>Self explanatory.</p>
-          </a> */}
-          <a
-            href="/frames"
-            className="card"
-            onClick={() => mixpanel.track("Project Click: Frames")}
-          >
-            <>
-              <h2>Frames &rarr;</h2>
-              <p>Lens configs.</p>
-            </>
+          <a href="https://ilikefarts.com" className="card" target="_blank">
+            <h2>Untitled &rarr;</h2>
+            <p>
+              Because <em>someone</em> needed to make it.
+            </p>
           </a>
         </div>
       </main>
@@ -108,15 +99,8 @@ export default function Projects() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -138,9 +122,7 @@ export default function Projects() {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition:
-            color 0.15s ease,
-            border-color 0.15s ease;
+          transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .card:hover,
@@ -178,17 +160,8 @@ export default function Projects() {
         body {
           padding: 0;
           margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
 

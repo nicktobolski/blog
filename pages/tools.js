@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Tools by Nick Tobolski</title>
+        <title>Tools and Their Creation, by Nick Tobolski</title>
         <meta
           property="og:title"
           content="Content of Nick Tobolski"
@@ -22,7 +22,7 @@ export default function Projects() {
       </Head>
 
       <main>
-        <h1 className="title">Tools and Their Makers</h1>
+        <h1 className="title">Tools and Their Creation</h1>
         <div className="description">by Nick Tobolski</div>
 
         <div className="grid">
@@ -41,8 +41,9 @@ export default function Projects() {
             portion of our success in this planet's ecosystem.
           </p>
           <p>
-            Poorly designed tools, like poor adaptations, are inefficient and
-            are eventually replaced by more efficient and more useful ones.
+            Poorly designed tools, like maladaptations, are inefficient or
+            harmful, and are eventually replaced by more efficient and more
+            useful ones.
           </p>
           <p>
             Which capabilities does a tool grant its user? How much time and
