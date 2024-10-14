@@ -32,24 +32,19 @@ export default function Projects() {
 
           <blockquote>
             The real problem of humanity is the following: We have Paleolithic
-            emotions, medieval institutions and godlike technology. And it is
-            terrifically dangerous, and it is now approaching a point of crisis
-            overall.
-            <cite>― Edward O. Wilson</cite>
+            emotions, medieval institutions and godlike technology.
+            <cite>Edward O. Wilson</cite>
           </blockquote>
-          <blockquote>
-            I am in the right place at the right time, doing the right thing.
-            <cite>Louise Hay</cite>
-          </blockquote>
+
           <blockquote>
             Only that day dawns to which we are awake. There is more day to
             dawn. The sun is but a morning star.
-            <cite>HDT</cite>
+            <cite>Henry David Thoreau</cite>
           </blockquote>
           <blockquote>
             Now, while the blood is hot, we must enter with brisk step upon the
             better course.
-            <cite>Seneca</cite>
+            <cite>Lucius Annaeus Seneca</cite>
           </blockquote>
           <blockquote>
             The reasonable man adapts himself to the world: the unreasonable one
@@ -71,7 +66,7 @@ export default function Projects() {
             fluency not only in its words but in the silent lines of its lips
             and face and between the lashes of your eyes and in every motion and
             joint of your body.
-            <cite>Whitman</cite>
+            <cite>Walt Whitman</cite>
           </blockquote>
           <blockquote>
             Trees go wandering forth in all directions with every wind, going
