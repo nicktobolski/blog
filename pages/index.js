@@ -15,7 +15,7 @@ export default function Home() {
         <meta
           name="description"
           property="og:description"
-          content="Personal site of Nick Tobolski"
+          content="Personal site of Nick Tobolski, Extraodinaire"
           key="desc"
         />
       </Head>
