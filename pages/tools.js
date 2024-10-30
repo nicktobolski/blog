@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Tools and Their Creation, by Nick Tobolski</title>
+        <title>On Tools, by Nick Tobolski</title>
         <meta
           property="og:title"
           content="Content of Nick Tobolski"
@@ -15,54 +15,49 @@ export default function Projects() {
           name="description"
           property="og:description"
           content="Tools extend the reach of our species by granting us compounding
-            abilities; one tool begets another, and potentially millions more."
+            abilities; one tool begets another and potentially millions more."
           key="desc"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">Tools and Their Creation</h1>
-        <div className="description">by Nick Tobolski</div>
+        <h1>Tools</h1>
 
         <div className="grid">
           <p className="intro">
             Tools<sup>†</sup> extend the reach of our species by granting us
-            compounding abilities; one tool begets another, and potentially
+            compounding abilities; one tool begets another and potentially
             millions more.
           </p>
-          <p>Technological progress is made possible through tool creation.</p>
+
           <p>
-            Tool creation allows humans to circumvent the evolutionary cycle of
-            adaptation being tied to generations. Instead, our species creates
-            new adaptations much more rapidly than generational adaptation
-            allows. This ability, unrivaled among our animal counterparts, is a
-            force multiplier for our species' adaptation, and explains a large
-            portion of our success in this planet's ecosystem.
+            All technological progress is tool creation. Tools allow humans to
+            circumvent the evolutionary cycle, freeing adaptation from being
+            tied to generations. Instead, our species creates new adaptations
+            more rapidly than generational adaptation would allow. This ability,
+            unrivaled on this planet, is a force multiplier for our species'
+            adaptation.
           </p>
           <p>
-            Poorly designed tools, like maladaptations, are inefficient or
-            harmful, and are eventually replaced by more efficient and more
-            useful ones.
+            Poorly designed tools, like traits lost in the aeons of evolution,
+            are inefficient and are eventually supplanted by better adaptations.
           </p>
           <p>
-            Which capabilities does a tool grant its user? How much time and
-            energy does it save them? Tool design, and evolutionary adaptations,
-            are about utility and leverage (not to discount{" "}
-            <a href="https://lawsofux.com/aesthetic-usability-effect/">
-              aesthetics
-            </a>
-            ).
+            Which capabilities or advantages does a tool grant its user? How
+            much time and energy does it save them? How much more effective can
+            its user be in the real world? The success of a tools and
+            evolutionary adaptations fundamentally hinge on utility and
+            leverage.
           </p>
           <p>
-            Successful tools endure because they either serve as a foundation
-            for more tool creation (e.g., computers), or they're so
-            well-designed that any variation makes them less useful. Time spent
-            building anything other than well-designed tools is time wasted.
+            From an evolutionary perspective, building anything other than
+            well-designed tools is a waste of time.
           </p>
+          {/* <p>Life is too short to build bad software.</p> */}
           <div className="footnote">
             † e.g., axes, wrenches, books, cars, computers, surgical machines,
-            web applications, LLMs, et al.
+            web applications, LLMs, etc.
           </div>
         </div>
       </main>
@@ -153,6 +148,7 @@ Outline: When do they become obsolete and how do you prevent it?
           font-style: italic;
           font-size: 0.8rem;
           color: #6e6e6e;
+          margin-top: 5rem;
         }
       `}</style>
 
@@ -161,8 +157,17 @@ Outline: When do they become obsolete and how do you prevent it?
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+          font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            Fira Sans,
+            Droid Sans,
+            Helvetica Neue,
             sans-serif;
         }
 
