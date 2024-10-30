@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>On Tools, by Nick Tobolski</title>
+        <title>Tools - Nick Tobolski</title>
         <meta
           property="og:title"
           content="Content of Nick Tobolski"
@@ -32,12 +32,11 @@ export default function Projects() {
           </p>
 
           <p>
-            All technological progress is tool creation. Tools allow humans to
-            circumvent the evolutionary cycle, freeing adaptation from being
-            tied to generations. Instead, our species creates new adaptations
-            more rapidly than generational adaptation would allow. This ability,
-            unrivaled on this planet, is a force multiplier for our species'
-            adaptation.
+            Tools allow homo sapiens to circumvent the evolutionary pattern of
+            adaptation being tied to generations. Instead, our species create
+            adaptations more rapidly than is otherwise allowed. This ability,
+            unrivaled, is a force multiplier for our species' adaptation. All
+            technological progress is tool creation.
           </p>
           <p>
             Poorly designed tools, like traits lost in the aeons of evolution,
@@ -118,6 +117,7 @@ Outline: When do they become obsolete and how do you prevent it?
 
         .intro {
           font-size: 1.5rem;
+          margin-bottom: 36px;
         }
 
         .description {
