@@ -25,27 +25,20 @@ export default function Projects() {
         <div className="grid">
           <h1 className="essay-header">Tool Making</h1>
           <p className="intro">
-            Tools<sup>†</sup> extend the{" "}
-            <a href="https://www.ted.com/talks/the_ted_interview_david_deutsch_on_the_infinite_reach_of_knowledge?subtitle=en">
-              reach
-            </a>{" "}
-            of our species by granting us compounding abilities; one tool begets
-            another and potentially millions more.
+            Tools<sup>†</sup> extend the reach of our species by granting us
+            compounding abilities; one tool begets another and potentially
+            millions more.
           </p>
 
           <p>
-            Tool making allow homo sapiens to circumvent numerous constraints
+            Tool making allow homo sapiens to bypass numerous constraints of
             evolution. Instead, our species can adapt much more rapidly than is
             otherwise possible. This ability, virtually unrivaled in the known
             universe, is a force multiplier for our adaptation.
           </p>
 
           {/* <h2>Maximizing Fitness</h2> */}
-          <p>
-            Poorly designed tools, like many traits lost in eons of evolution,
-            are inefficient, or not sufficiently useful and risk being
-            supplanted.{" "}
-          </p>
+
           <blockquote>
             They're sub-microscopic and made of organic molecules, rather than
             macroscopic and made of silicates or steel but, at the molecular
@@ -57,18 +50,18 @@ export default function Projects() {
           <p>
             Which advantages does a tool grant its user? How much time and
             computation does it save them? How much more effective can they be
-            in the real world? The better the tool, the more fitness it
-            provides.
+            in the real world? The better the tool, the more fitness is bestowed
+            upon its user.
           </p>
-
           <p>
-            We should be designing tools in a way that grants our users maximum
-            fitness with minimum costs.
+            Poorly designed tools, like many traits lost in eons of evolution,
+            are inefficient, or not sufficiently useful and risk being
+            supplanted.
           </p>
-
           <p>
-            It's a biological revolution billions of years in the making, and we
-            would be wise to play our part well.
+            To play our part in this process, started billions of years ago, we
+            should create tools that grant their users maximum fitness at
+            minimal cost.
           </p>
 
           {/* <p>Life is too short to build bad software.</p> */}
@@ -141,10 +134,10 @@ Outline: When do they become obsolete and how do you prevent it?
           margin-bottom: 2rem;
         }
         blockquote {
-          font-size: 1.1rem;
+          font-size: 1.15rem;
           padding-left: 2rem;
           border-left: 4px solid #ddd;
-          margin-left: 0;
+          margin: 2rem 0 2.2rem 0;
           color: #2e2e2e;
         }
         cite {

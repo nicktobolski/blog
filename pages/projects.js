@@ -31,8 +31,8 @@ export default function Projects() {
           >
             <h2>Team Stats &rarr;</h2>
             <p>
-              A tool for improving League of Legends team performance through
-              data visualization. Work in progress.
+              A tool for improving team performance through data visualization
+              in the game League of Legends. Work in progress.
             </p>
           </a>
           <a
@@ -46,11 +46,14 @@ export default function Projects() {
               pollinators and their angiosperms.
             </p>
           </a>
-          <a href="https://ilikefarts.com" className="card" target="_blank">
+          <a
+            href="https://ilikefarts.com"
+            className="card"
+            target="_blank"
+            title="or maybe they didn't"
+          >
             <h2>Untitled &rarr;</h2>
-            <p>
-              Because <em>someone</em> needed to make it.
-            </p>
+            <p>Someone had to.</p>
           </a>
         </div>
       </main>

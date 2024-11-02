@@ -48,11 +48,11 @@ export default function Projects() {
             </cite>
           </blockquote>
 
-          <blockquote>
+          {/* <blockquote>
             The real problem of humanity is the following: We have Paleolithic
             emotions, medieval institutions and godlike technology.
             <cite>Edward O. Wilson</cite>
-          </blockquote>
+          </blockquote> */}
 
           <blockquote>
             Only that day dawns to which we are awake. There is more day to
@@ -71,6 +71,13 @@ export default function Projects() {
             <cite>George Bernard Shaw</cite>
           </blockquote>
           <blockquote>
+            Trees go wandering forth in all directions with every wind, going
+            and coming like ourselves, traveling with us around the sun two
+            million miles a day, and through space heaven knows how fast and
+            far!
+            <cite>John Muir</cite>
+          </blockquote>
+          <blockquote>
             Love the earth and sun and the animals, despise riches, give alms to
             every one that asks, stand up for the stupid and crazy, devote your
             income and labor to others, hate tyrants, argue not concerning God,
@@ -85,13 +92,6 @@ export default function Projects() {
             and face and between the lashes of your eyes and in every motion and
             joint of your body.
             <cite>Walt Whitman</cite>
-          </blockquote>
-          <blockquote>
-            Trees go wandering forth in all directions with every wind, going
-            and coming like ourselves, traveling with us around the sun two
-            million miles a day, and through space heaven knows how fast and
-            far!
-            <cite>John Muir</cite>
           </blockquote>
           <blockquote>
             Live in the sunshine, swim the sea, drink the wild air. Nothing
@@ -190,7 +190,7 @@ export default function Projects() {
           justify-content: center;
           flex-wrap: wrap;
 
-          max-width: 800px;
+          max-width: 55em;
           margin-top: 3rem;
         }
 
