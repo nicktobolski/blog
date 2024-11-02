@@ -31,6 +31,24 @@ export default function Projects() {
           </blockquote>
 
           <blockquote>
+            Like an explosive awaiting a spark, unimaginably numerous
+            environments in the universe are waiting out there, for aeons on
+            end, doing nothing at all or blindly generating evidence and storing
+            it up or pouring it out into space. Almost any of them would, if the
+            right knowledge ever reached it, instantly and irrevocably burst
+            into a radically different type of physical activity: intense
+            knowledge-creation, displaying all the various kinds of complexity,
+            universality and reach that are inherent in the laws of nature, and
+            transforming that environment from what is typical today into what
+            could become typical in the future. If we want to, we could be that
+            spark.
+            <cite>
+              David Deutsch,The Beginning of Infinity: Explanations That
+              Transform the World
+            </cite>
+          </blockquote>
+
+          <blockquote>
             The real problem of humanity is the following: We have Paleolithic
             emotions, medieval institutions and godlike technology.
             <cite>Edward O. Wilson</cite>
@@ -155,8 +173,15 @@ export default function Projects() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+          font-family:
+            Menlo,
+            Monaco,
+            Lucida Console,
+            Liberation Mono,
+            DejaVu Sans Mono,
+            Bitstream Vera Sans Mono,
+            Courier New,
+            monospace;
         }
 
         .grid {
@@ -178,7 +203,9 @@ export default function Projects() {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+          transition:
+            color 0.15s ease,
+            border-color 0.15s ease;
         }
 
         .card:hover,
@@ -210,7 +237,7 @@ export default function Projects() {
           }
         }
         blockquote {
-          font-size: 1.5em;
+          font-size: 1.2em;
           text-align: left;
           width: 100%;
           font-weight: 300;
@@ -232,8 +259,17 @@ export default function Projects() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+          font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            Fira Sans,
+            Droid Sans,
+            Helvetica Neue,
             sans-serif;
         }
 
