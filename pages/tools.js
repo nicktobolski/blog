@@ -22,41 +22,59 @@ export default function Projects() {
       </Head>
 
       <main>
-        <h1>Tools</h1>
-
         <div className="grid">
+          <h1 className="essay-header">Tool Making</h1>
           <p className="intro">
-            Tools<sup>†</sup> extend the reach of our species by granting us
-            compounding abilities; one tool begets another and potentially
-            millions more.
+            Tools<sup>†</sup> extend the{" "}
+            <a href="https://www.ted.com/talks/the_ted_interview_david_deutsch_on_the_infinite_reach_of_knowledge?subtitle=en">
+              reach
+            </a>{" "}
+            of our species by granting us compounding abilities; one tool begets
+            another and potentially millions more.
           </p>
 
           <p>
-            Tools allow homo sapiens to circumvent the evolutionary pattern of
-            adaptation being tied to generations. Instead, our species create
-            adaptations more rapidly than is otherwise allowed. This ability,
-            unrivaled, is a force multiplier for our species' adaptation. All
-            technological progress is tool creation.
+            Tool making allow homo sapiens to circumvent numerous constraints
+            evolution. Instead, our species can adapt much more rapidly than is
+            otherwise possible. This ability, virtually unrivaled in the known
+            universe, is a force multiplier for our adaptation.
           </p>
+
+          {/* <h2>Maximizing Fitness</h2> */}
           <p>
-            Poorly designed tools, like traits lost in the aeons of evolution,
-            are inefficient and are eventually supplanted by better adaptations.
+            Poorly designed tools, like many traits lost in eons of evolution,
+            are inefficient, or not sufficiently useful and risk being
+            supplanted.{" "}
           </p>
+          <blockquote>
+            They're sub-microscopic and made of organic molecules, rather than
+            macroscopic and made of silicates or steel but, at the molecular
+            level, life was tool-making and tool-using at the start.{" "}
+            <cite>
+              Carl Sagan &amp; Ann Druyan, Shadows of Forgotten Ancestors
+            </cite>
+          </blockquote>
           <p>
-            Which capabilities or advantages does a tool grant its user? How
-            much time and energy does it save them? How much more effective can
-            its user be in the real world? The success of a tools and
-            evolutionary adaptations fundamentally hinge on utility and
-            leverage.
+            Which advantages does a tool grant its user? How much time and
+            computation does it save them? How much more effective can they be
+            in the real world? The better the tool, the more fitness it
+            provides.
           </p>
+
           <p>
-            From an evolutionary perspective, building anything other than
-            well-designed tools is a waste of time.
+            We should be designing tools in a way that grants our users maximum
+            fitness with minimum costs.
           </p>
+
+          <p>
+            It's a biological revolution billions of years in the making, and we
+            would be wise to play our part well.
+          </p>
+
           {/* <p>Life is too short to build bad software.</p> */}
           <div className="footnote">
             † e.g., axes, wrenches, books, cars, computers, surgical machines,
-            web applications, LLMs, etc.
+            DNA sequencers, languages, applications, LLMs, etc.
           </div>
         </div>
       </main>
@@ -70,6 +88,9 @@ Outline: When do they become obsolete and how do you prevent it?
       <footer></footer>
 
       <style jsx>{`
+        h1.essay-header {
+          text-align: left !important;
+        }
         sup {
           font-size: 1rem;
         }
@@ -117,9 +138,24 @@ Outline: When do they become obsolete and how do you prevent it?
 
         .intro {
           font-size: 1.5rem;
-          margin-bottom: 36px;
+          margin-bottom: 2rem;
         }
-
+        blockquote {
+          font-size: 1.1rem;
+          padding-left: 2rem;
+          border-left: 4px solid #ddd;
+          margin-left: 0;
+          color: #2e2e2e;
+        }
+        cite {
+          display: inline-block;
+          padding-left: 0.5em;
+          opacity: 0.5;
+        }
+        cite::before {
+          content: " — ";
+          padding-right: 0.25em;
+        }
         .description {
           line-height: 1.5;
           font-size: 1rem;
@@ -148,7 +184,8 @@ Outline: When do they become obsolete and how do you prevent it?
           font-style: italic;
           font-size: 0.8rem;
           color: #6e6e6e;
-          margin-top: 5rem;
+          margin-top: 2rem;
+          margin-bottom: 5rem;
         }
       `}</style>
 
