@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="container">
       <Head>
-        <title>Tools - Nick Tobolski</title>
+        <title>Tool Making - Nick Tobolski</title>
         <meta
           property="og:title"
           content="Content of Nick Tobolski"

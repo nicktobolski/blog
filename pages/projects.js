@@ -25,14 +25,25 @@ export default function Projects() {
 
         <div className="grid">
           <a
+            href="https://www.quixottica.com/"
+            className="card"
+            target="_blank"
+          >
+            <h2>Team Stats &rarr;</h2>
+            <p>
+              A tool for improving League of Legends team performance through
+              data visualization. Work in progress.
+            </p>
+          </a>
+          <a
             href="https://pollinator.emrgnt.co/"
             className="card"
             target="_blank"
           >
             <h2>Pollinator Relationships &rarr;</h2>
             <p>
-              A tool for exploring visual relationships between pollinators and
-              their flowers.
+              A prototype of a tool for exploring visual relationships between
+              pollinators and their angiosperms.
             </p>
           </a>
           <a href="https://ilikefarts.com" className="card" target="_blank">
@@ -99,8 +110,15 @@ export default function Projects() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+          font-family:
+            Menlo,
+            Monaco,
+            Lucida Console,
+            Liberation Mono,
+            DejaVu Sans Mono,
+            Bitstream Vera Sans Mono,
+            Courier New,
+            monospace;
         }
 
         .grid {
@@ -122,7 +140,9 @@ export default function Projects() {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+          transition:
+            color 0.15s ease,
+            border-color 0.15s ease;
         }
 
         .card:hover,
@@ -160,8 +180,17 @@ export default function Projects() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+          font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            Segoe UI,
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            Fira Sans,
+            Droid Sans,
+            Helvetica Neue,
             sans-serif;
         }
 

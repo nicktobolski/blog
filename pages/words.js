@@ -26,8 +26,8 @@ export default function Projects() {
         <div className="grid">
           <a href="/tools" className="card">
             <>
-              <h2>Tools &rarr;</h2>
-              <p>An essay on the relationship of tools and evolution.</p>
+              <h2>Tool Making &rarr;</h2>
+              <p>Thoughts on the relationship of tools and evolution.</p>
             </>
           </a>
           <a href="/frames" className="card">
