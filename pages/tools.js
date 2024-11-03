@@ -31,10 +31,11 @@ export default function Projects() {
           </p>
 
           <p>
-            Tool making allow homo sapiens to bypass numerous constraints of
-            evolution. Instead, our species can adapt much more rapidly than is
-            otherwise possible. This ability, virtually unrivaled in the known
-            universe, is a force multiplier for our adaptation.
+            Tool making allows <em>Homo sapiens</em> to bypass numerous
+            constraints of evolution. Instead, our species can adapt much more
+            rapidly than is otherwise possible. This ability, virtually
+            unrivaled in the known universe, is a force multiplier for our
+            adaptation.
           </p>
 
           {/* <h2>Maximizing Fitness</h2> */}

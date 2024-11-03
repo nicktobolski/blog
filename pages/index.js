@@ -26,7 +26,7 @@ export default function Home() {
         <p className="description intro">
           A software engineer with a passion for creating intuitive and powerful{" "}
           <a href="/tools">tools</a> that enable{" "}
-          <a href="https://en.wikipedia.org/wiki/Human">Humankind</a>.
+          <a href="https://en.wikipedia.org/wiki/Human">Humans</a>.
         </p>
 
         <div className="grid">
