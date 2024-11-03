@@ -2,7 +2,7 @@ import React from "react";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div className="container">
       <Component {...pageProps} />
     </div>
   );

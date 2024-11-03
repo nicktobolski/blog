@@ -32,11 +32,11 @@ export default function Home() {
         <div className="grid">
           <a href="/projects" className="card">
             <h2>Projects &rarr;</h2>
-            <p>Explorations in code.</p>
+            <p>Explorations in code</p>
           </a>
           <a href="/words" className="card">
             <h2>Words &rarr;</h2>
-            <p>With an appreciation for brevity.</p>
+            <p>With an appreciation for brevity</p>
           </a>
           <a
             href="https://github.com/nicktobolski"
@@ -57,10 +57,6 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <b className="wip">WIP</b>
-      </footer>
-
       <style jsx>{`
         .container {
           min-height: 100vh;
@@ -72,7 +68,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 5rem 1.5rem;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -80,7 +76,7 @@ export default function Home() {
           align-items: center;
         }
         .intro {
-          max-width: 42rem;
+          max-width: 35rem;
         }
         a {
           color: #0070f3;
@@ -183,6 +179,7 @@ export default function Home() {
           .grid {
             width: 100%;
             flex-direction: column;
+            align-items: stretch;
           }
         }
       `}</style>

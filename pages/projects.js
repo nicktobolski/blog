@@ -59,6 +59,11 @@ export default function Projects() {
       </main>
 
       <style jsx>{`
+        @media (max-width: 600px) {
+          .grid {
+            align-items: stretch !important;
+          }
+        }
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
