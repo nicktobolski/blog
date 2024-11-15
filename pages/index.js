@@ -25,8 +25,12 @@ export default function Home() {
 
         <p className="description intro">
           A software engineer with a passion for creating intuitive and powerful{" "}
-          <a href="/tools">tools</a> that enable{" "}
-          <a href="https://en.wikipedia.org/wiki/Human">Humans</a>.
+          <a href="/tools">tools</a> that extend{" "}
+          <a href="https://www.youtube.com/watch?v=cEfG1PHNB64" target="_blank">
+            the reach
+          </a>
+          {" of "}
+          <a href="https://en.wikipedia.org/wiki/Human">humanity</a>.
         </p>
 
         <div className="grid">
@@ -76,7 +80,7 @@ export default function Home() {
           align-items: center;
         }
         .intro {
-          max-width: 35rem;
+          max-width: 39rem;
         }
         a {
           color: #0070f3;
