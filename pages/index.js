@@ -24,13 +24,13 @@ export default function Home() {
         <h1 className="title">Nick Tobolski</h1>
 
         <p className="description intro">
-          A human  who enjoys crafting {" "}
+          A human who enjoys building {" "}
           <a href="/tools">tools</a> that extend{" "}
           <a href="https://www.youtube.com/watch?v=cEfG1PHNB64" target="_blank">
             the reach
           </a>
           {" of "}
-          <a href="https://en.wikipedia.org/wiki/Human">humanity</a>, among other things.
+          <a href="https://en.wikipedia.org/wiki/Human">humanity</a> (among other things).
         </p>
 
         <div className="grid">
