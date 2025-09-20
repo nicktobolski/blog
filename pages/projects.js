@@ -25,6 +25,15 @@ export default function Projects() {
 
         <div className="grid">
           <a
+            href="https://github.com/nicktobolski/bananacci"
+            className="card"
+            target="_blank"
+          >
+            <h2>Banana Volume Visualizer &rarr;</h2>
+            <p>
+             Fix windows volume key usability problem in a playful way.            </p>
+          </a>
+          <a
             href="https://www.quixottica.com/"
             className="card"
             target="_blank"
@@ -32,7 +41,7 @@ export default function Projects() {
             <h2>Team Stats &rarr;</h2>
             <p>
               A tool for improving team performance through data visualization
-              in the game League of Legends. Work in progress.
+              in the game League of Legends. 
             </p>
           </a>
           <a
@@ -47,6 +56,16 @@ export default function Projects() {
             </p>
           </a>
           <a
+            href="https://web.archive.org/web/20170912074045/http://bekindbumpersticker.com/"
+            className="card"
+            target="_blank"
+          >
+            <h2>BE KIND Bumper Stickers  &rarr;</h2>
+            <p>
+              I made, marketed, and sold these BE KIND bumper stickers in 2016.
+            </p>
+          </a>
+          {/* <a
             href="https://ilikefarts.com"
             className="card"
             target="_blank"
@@ -54,7 +73,7 @@ export default function Projects() {
           >
             <h2>Untitled &rarr;</h2>
             <p>Someone had to.</p>
-          </a>
+          </a> */}
         </div>
       </main>
 
