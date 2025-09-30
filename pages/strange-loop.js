@@ -97,8 +97,7 @@ export default function StrangeLoop() {
           margin-bottom: 2rem;
           padding: 1.5rem 2rem;
           background: rgba(255, 255, 255, 0.65);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
+          filter: blur(0.5px);
           border-radius: 15px;
           border: 1px solid rgba(255, 255, 255, 0.3);
         }
@@ -155,8 +154,7 @@ export default function StrangeLoop() {
           margin-bottom: 1.5rem;
           padding: 1.5rem 2rem;
           background: rgba(255, 255, 255, 0.65);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
+          filter: blur(0.5px);
           border-radius: 15px;
           border: 1px solid rgba(255, 255, 255, 0.3);
         }
