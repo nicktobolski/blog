@@ -154,20 +154,16 @@ export default function Home() {
           color: inherit;
           text-decoration: none;
           background: transparent;
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          border: 1px solid rgba(234, 234, 234, 0.5);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
           border-radius: 10px;
-          transition:
-            color 0.15s ease,
-            border-color 0.15s ease;
+          transition: color 0.15s ease;
         }
 
         a.card:hover,
         a.card:focus,
         a.card:active {
           color: #0070f3;
-          border-color: #0070f3;
         }
 
         .card h2 {
