@@ -111,11 +111,6 @@ export default function StrangeLoop() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          background: rgba(255, 255, 255, 0.85);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border-radius: 20px;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
 
         a {
@@ -173,12 +168,19 @@ export default function StrangeLoop() {
 
           max-width: 45rem;
           margin-top: 3rem;
+          padding: 3rem 2.5rem;
+          background: rgba(255, 255, 255, 0.85);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
 
         @media (max-width: 600px) {
           .grid {
             width: 100%;
             flex-direction: column;
+            padding: 2rem 1.5rem;
           }
           
           .poem {
