@@ -95,6 +95,12 @@ export default function StrangeLoop() {
         h1.poem-header {
           text-align: center;
           margin-bottom: 2rem;
+          padding: 1.5rem 2rem;
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-radius: 15px;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
         }
         
         .container {
@@ -147,6 +153,12 @@ export default function StrangeLoop() {
 
         .poem p {
           margin-bottom: 1.5rem;
+          padding: 1.5rem 2rem;
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-radius: 15px;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
         }
 
         .poem .finale {
@@ -168,23 +180,20 @@ export default function StrangeLoop() {
 
           max-width: 45rem;
           margin-top: 3rem;
-          padding: 3rem 2.5rem;
-          background: rgba(255, 255, 255, 0.4);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          border-radius: 20px;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
 
         @media (max-width: 600px) {
           .grid {
             width: 100%;
             flex-direction: column;
-            padding: 2rem 1.5rem;
           }
           
           .poem {
             font-size: 1rem;
+          }
+          
+          .poem p {
+            padding: 1rem 1.5rem;
           }
         }
       `}</style>
