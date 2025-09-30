@@ -68,10 +68,12 @@ export default function ParticleField() {
     const ctx = canvas.getContext("2d");
     const noise = new PerlinNoise();
     
-    // Set canvas size
+    // Set canvas size with device pixel ratio for sharp rendering
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      ctx.scale(dpr, dpr);
     };
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
@@ -80,12 +82,12 @@ export default function ParticleField() {
     class Particle {
       constructor() {
         this.reset();
-        this.y = Math.random() * canvas.height;
+        this.y = Math.random() * window.innerHeight;
       }
 
       reset() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        this.x = Math.random() * window.innerWidth;
+        this.y = Math.random() * window.innerHeight;
         this.vx = 0;
         this.vy = 0;
         this.life = Math.random() * 100 + 150;
@@ -114,7 +116,7 @@ export default function ParticleField() {
         this.life -= 0.5;
 
         // Wrap around edges or reset
-        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height || this.life <= 0) {
+        if (this.x < 0 || this.x > window.innerWidth || this.y < 0 || this.y > window.innerHeight || this.life <= 0) {
           this.reset();
         }
       }
@@ -130,7 +132,7 @@ export default function ParticleField() {
 
     // Create particles
     const particles = [];
-    const particleCount = Math.min(150, Math.floor((canvas.width * canvas.height) / 8000));
+    const particleCount = Math.min(150, Math.floor((window.innerWidth * window.innerHeight) / 8000));
     
     for (let i = 0; i < particleCount; i++) {
       particles.push(new Particle());
@@ -145,7 +147,7 @@ export default function ParticleField() {
       
       // Fade out effect instead of clearing
       ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
       // Update and draw particles
       particles.forEach((particle) => {
