@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import ParticleField from "../components/ParticleField";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
           key="desc"
         />
       </Head>
+
+      <ParticleField />
 
       <main>
         <h1 className="title">Nick Tobolski</h1>
@@ -150,7 +153,9 @@ export default function Home() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border: 1px solid rgba(234, 234, 234, 0.5);
           border-radius: 10px;
           transition:
             color 0.15s ease,
