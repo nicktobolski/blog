@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import ParticleField from "../components/ParticleField";
 
 export default function Home() {
   return (
@@ -20,8 +19,6 @@ export default function Home() {
           key="desc"
         />
       </Head>
-
-      <ParticleField />
 
       <main>
         <h1 className="title">Nick Tobolski</h1>
@@ -153,17 +150,18 @@ export default function Home() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          background: transparent;
-          backdrop-filter: blur(5px);
-          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition: color 0.15s ease;
+          transition:
+            color 0.15s ease,
+            border-color 0.15s ease;
         }
 
         a.card:hover,
         a.card:focus,
         a.card:active {
           color: #0070f3;
+          border-color: #0070f3;
         }
 
         .card h2 {
