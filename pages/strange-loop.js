@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import RecursiveTree from "../components/RecursiveTree";
 
 export default function StrangeLoop() {
   return (
@@ -19,6 +20,8 @@ export default function StrangeLoop() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <RecursiveTree />
 
       <main>
         <div className="grid">
@@ -92,6 +95,10 @@ export default function StrangeLoop() {
         h1.poem-header {
           text-align: center;
           margin-bottom: 2rem;
+          padding: 1.5rem 2rem;
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-radius: 15px;
         }
         
         .container {
@@ -144,11 +151,15 @@ export default function StrangeLoop() {
 
         .poem p {
           margin-bottom: 1.5rem;
+          padding: 1.5rem 2rem;
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-radius: 15px;
         }
 
         .poem .finale {
           margin-top: 2rem;
-          text-align: center;
+          text-align: left;
         }
 
         .description {
@@ -175,6 +186,10 @@ export default function StrangeLoop() {
           
           .poem {
             font-size: 1rem;
+          }
+          
+          .poem p {
+            padding: 1rem 1.5rem;
           }
         }
       `}</style>
