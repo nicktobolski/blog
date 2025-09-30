@@ -81,7 +81,7 @@ export default function StrangeLoop() {
               <strong>and in that reflection, the world becomes the same.</strong>
             </p>
 
-            <p>~ Nick Tobolski + gpt-oss:120b</p>
+            <p> ~ gpt-oss:120b</p>
           </div>
         </div>
       </main>
