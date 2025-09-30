@@ -169,9 +169,9 @@ export default function StrangeLoop() {
           max-width: 45rem;
           margin-top: 3rem;
           padding: 3rem 2.5rem;
-          background: rgba(255, 255, 255, 0.85);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border-radius: 20px;
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
