@@ -24,6 +24,12 @@ export default function Projects() {
         <h1 className="title">Words</h1>
 
         <div className="grid">
+          <a href="/strange-loop" className="card">
+            <>
+              <h2>I Am A Strange Loop &rarr;</h2>
+              <p>A poem about self-reference, consciousness, and paradox.</p>
+            </>
+          </a>
           <a href="/tools" className="card">
             <>
               <h2>Tool Making &rarr;</h2>
