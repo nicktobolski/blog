@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import ParticleField from "../components/ParticleField";
+import RecursiveTree from "../components/RecursiveTree";
 
 export default function StrangeLoop() {
   return (
@@ -21,7 +21,7 @@ export default function StrangeLoop() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ParticleField />
+      <RecursiveTree />
 
       <main>
         <div className="grid">
