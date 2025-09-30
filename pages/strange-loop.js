@@ -163,7 +163,7 @@ export default function StrangeLoop() {
 
         .poem .finale {
           margin-top: 2rem;
-          text-align: center;
+          text-align: left;
         }
 
         .description {
