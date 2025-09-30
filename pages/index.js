@@ -153,6 +153,7 @@ export default function Home() {
           text-align: left;
           color: inherit;
           text-decoration: none;
+          background: transparent;
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           border: 1px solid rgba(234, 234, 234, 0.5);
