@@ -96,10 +96,9 @@ export default function StrangeLoop() {
           text-align: center;
           margin-bottom: 2rem;
           padding: 1.5rem 2rem;
-          background: rgba(255, 255, 255, 0.65);
-          filter: blur(0.5px);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border-radius: 15px;
-          border: 1px solid rgba(255, 255, 255, 0.3);
         }
         
         .container {
@@ -153,10 +152,9 @@ export default function StrangeLoop() {
         .poem p {
           margin-bottom: 1.5rem;
           padding: 1.5rem 2rem;
-          background: rgba(255, 255, 255, 0.65);
-          filter: blur(0.5px);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border-radius: 15px;
-          border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .poem .finale {
