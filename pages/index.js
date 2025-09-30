@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import ParticleField from "../components/ParticleField";
 
 export default function Home() {
   return (
@@ -20,8 +19,6 @@ export default function Home() {
           key="desc"
         />
       </Head>
-
-      <ParticleField />
 
       <main>
         <h1 className="title">Nick Tobolski</h1>

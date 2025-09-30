@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import ParticleField from "../components/ParticleField";
 
 export default function StrangeLoop() {
   return (
@@ -19,6 +20,8 @@ export default function StrangeLoop() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <ParticleField />
 
       <main>
         <div className="grid">
