@@ -25,9 +25,13 @@ export default function Projects() {
 
         <div className="grid">
           <blockquote>
-            The first principal is that you must not fool yourself - and you're
-            the easiest person to fool.
-            <cite>Richard Feynman</cite>
+            If something is permitted by the laws of physics, then the only
+            thing that can prevent it from being technologically possible is not
+            knowing how.
+            <cite>
+              David Deutsch, The Beginning of Infinity: Explanations That
+              Transform the World
+            </cite>
           </blockquote>
 
           <blockquote>
@@ -48,22 +52,30 @@ export default function Projects() {
             </cite>
           </blockquote>
 
-          {/* <blockquote>
+          <blockquote>
             The real problem of humanity is the following: We have Paleolithic
             emotions, medieval institutions and godlike technology.
             <cite>Edward O. Wilson</cite>
-          </blockquote> */}
+          </blockquote>
+
+          <blockquote>
+            The first principal is that you must not fool yourself - and you're
+            the easiest person to fool.
+            <cite>Richard Feynman</cite>
+          </blockquote>
 
           <blockquote>
             Only that day dawns to which we are awake. There is more day to
             dawn. The sun is but a morning star.
             <cite>Henry David Thoreau</cite>
           </blockquote>
+
           <blockquote>
             Now, while the blood is hot, we must enter with brisk step upon the
             better course.
             <cite>Lucius Annaeus Seneca</cite>
           </blockquote>
+
           <blockquote>
             The reasonable man adapts himself to the world: the unreasonable one
             persists in trying to adapt the world to himself. Therefore all
@@ -77,6 +89,22 @@ export default function Projects() {
             far!
             <cite>John Muir</cite>
           </blockquote>
+
+          <blockquote>
+            Live in the sunshine, swim the sea, drink the wild air. Nothing
+            great was ever achieved without enthusiasm.
+            <cite>Ralph Waldo Emerson</cite>
+          </blockquote>
+          {/* <blockquote>
+            We are made for goodness. We are made for love. We are made for
+            friendliness. We are made for togetherness. We are made for all of
+            the beautiful things that you and I know. We are made to tell the
+            world that there are no outsiders. All are welcome; black, white,
+            red, yellow, rich, poor, educated, not educated, male, female, gay,
+            straight, all, all, all. We ALL belong to this family, this human
+            family[.]
+            <cite>Desmond Tutu</cite>
+          </blockquote> */}
           <blockquote>
             Love the earth and sun and the animals, despise riches, give alms to
             every one that asks, stand up for the stupid and crazy, devote your
@@ -92,21 +120,6 @@ export default function Projects() {
             and face and between the lashes of your eyes and in every motion and
             joint of your body.
             <cite>Walt Whitman</cite>
-          </blockquote>
-          <blockquote>
-            Live in the sunshine, swim the sea, drink the wild air. Nothing
-            great was ever achieved without enthusiasm.
-            <cite>Ralph Waldo Emerson</cite>
-          </blockquote>
-          <blockquote>
-            We are made for goodness. We are made for love. We are made for
-            friendliness. We are made for togetherness. We are made for all of
-            the beautiful things that you and I know. We are made to tell the
-            world that there are no outsiders. All are welcome; black, white,
-            red, yellow, rich, poor, educated, not educated, male, female, gay,
-            straight, all, all, all. We ALL belong to this family, this human
-            family[.]
-            <cite>Desmond Tutu</cite>
           </blockquote>
           <blockquote>
             Be soft. Do not let the world make you hard. Do not let pain make
@@ -173,15 +186,8 @@ export default function Projects() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -203,9 +209,7 @@ export default function Projects() {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition:
-            color 0.15s ease,
-            border-color 0.15s ease;
+          transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .card:hover,
@@ -262,17 +266,8 @@ export default function Projects() {
         body {
           padding: 0;
           margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
 
