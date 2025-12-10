@@ -34,13 +34,13 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="/projects" className="card">
-            <h2>Projects &rarr;</h2>
-            <p>Explorations in code</p>
-          </a>
           <a href="/words" className="card">
             <h2>Words &rarr;</h2>
             <p>With an appreciation for brevity</p>
+          </a>
+          <a href="/prototypes" className="card">
+            <h2>Prototypes &rarr;</h2>
+            <p>Explorations in code</p>
           </a>
           <a
             href="https://github.com/nicktobolski"
