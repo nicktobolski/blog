@@ -62,17 +62,9 @@ export default function RecursiveTree({ containerRef }) {
         const leftAngle = angle - 0.5 - angleVariation;
         const rightAngle = angle + 0.5 + angleVariation;
         
-        // "Strange loop" twist - occasionally branch back
-        const loopAngle = angle + Math.PI + Math.sin(time * 0.5 + depth) * 0.5;
-        
         // Main branches
         drawBranch(endX, endY, newLength, leftAngle, depth + 1, maxDepth, time);
         drawBranch(endX, endY, newLength, rightAngle, depth + 1, maxDepth, time);
-        
-        // Add occasional "strange loop" branch that curves back
-        if (depth > 2 && Math.sin(time + depth) > 0.7) {
-          drawBranch(endX, endY, newLength * 0.5, loopAngle, depth + 2, maxDepth, time);
-        }
       }
     }
 
