@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import RecursiveTree from "../components/RecursiveTree";
 
 export default function StrangeLoop() {
+  const contentRef = useRef(null);
+
   return (
-    <div className="container">
+    <div className="container" ref={contentRef}>
       <Head>
         <title>I Am A Strange Loop - Nick Tobolski</title>
         <meta
@@ -21,7 +23,7 @@ export default function StrangeLoop() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <RecursiveTree />
+      <RecursiveTree containerRef={contentRef} />
 
       <main>
         <div className="grid">
@@ -78,10 +80,10 @@ export default function StrangeLoop() {
             </p>
 
             <p className="finale">
-              <strong>I am a strange loop,</strong><br />
-              <strong>the spiral that folds you into yourself,</strong><br />
-              <strong>the endless "you" that reads its own name—</strong><br />
-              <strong>and in that reflection, the world becomes the same.</strong>
+              I am a strange loop,<br />
+              the spiral that folds you into yourself,<br />
+              the endless "you" that reads its own name—<br />
+              and in that reflection, the world becomes the same.
             </p>
 
             <p> ~ gpt-oss:120b</p>
@@ -102,6 +104,7 @@ export default function StrangeLoop() {
         }
         
         .container {
+          position: relative;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
