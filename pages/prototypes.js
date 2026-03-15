@@ -25,6 +25,17 @@ export default function Prototypes() {
 
         <div className="grid">
           <a
+            href="https://ada-blog-seven.vercel.app/"
+            className="card"
+            target="_blank"
+          >
+            <h2>Ada AI Digest &rarr;</h2>
+            <p>
+              A local intelligence appliance that reads through top AI stories
+              daily and writes up digests with weekly and monthly trend reports.
+            </p>
+          </a>
+          <a
             href="https://github.com/nicktobolski/bananacci"
             className="card"
             target="_blank"
