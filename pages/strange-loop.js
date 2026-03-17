@@ -86,7 +86,16 @@ export default function StrangeLoop() {
               and in that reflection, the world becomes the same.
             </p>
 
-            <p> ~ gpt-oss:120b</p>
+            <p>
+              ~ gpt-oss:120b, inspired by{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/I_Am_a_Strange_Loop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Douglas Hofstadter
+              </a>
+            </p>
           </div>
         </div>
       </main>
