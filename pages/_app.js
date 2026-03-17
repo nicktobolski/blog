@@ -13,10 +13,8 @@ function MyApp({ Component, pageProps }) {
           <Link href="/">&larr; Home</Link>
           <style jsx global>{`
             .back-nav {
-              position: fixed;
-              top: 1.5rem;
-              left: 1.5rem;
-              z-index: 10;
+              padding: 1.5rem;
+              width: 100%;
             }
             .back-nav a {
               color: #0070f3;
