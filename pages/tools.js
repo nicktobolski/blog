@@ -105,7 +105,7 @@ Outline: When do they become obsolete and how do you prevent it?
         }
 
         a {
-          color: #0070f3;
+          color: var(--accent);
           text-decoration: none;
         }
 
@@ -137,9 +137,9 @@ Outline: When do they become obsolete and how do you prevent it?
         blockquote {
           font-size: 1.15rem;
           padding-left: 2rem;
-          border-left: 4px solid #ddd;
+          border-left: 4px solid var(--blockquote-border);
           margin: 2rem 0 2.2rem 0;
-          color: #2e2e2e;
+          color: var(--blockquote-text);
         }
         cite {
           display: inline-block;
@@ -153,7 +153,7 @@ Outline: When do they become obsolete and how do you prevent it?
         .description {
           line-height: 1.5;
           font-size: 1rem;
-          color: #6e6e6e;
+          color: var(--secondary);
         }
 
         .grid {
@@ -177,33 +177,9 @@ Outline: When do they become obsolete and how do you prevent it?
         .footnote {
           font-style: italic;
           font-size: 0.8rem;
-          color: #6e6e6e;
+          color: var(--secondary);
           margin-top: 2rem;
           margin-bottom: 5rem;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>

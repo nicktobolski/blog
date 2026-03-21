@@ -151,7 +151,7 @@ export default function Projects() {
         }
 
         a {
-          color: #0070f3;
+          color: var(--accent);
           text-decoration: none;
         }
 
@@ -182,7 +182,7 @@ export default function Projects() {
         }
 
         code {
-          background: #fafafa;
+          background: var(--code-bg);
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
@@ -207,7 +207,7 @@ export default function Projects() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+          border: 1px solid var(--border);
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
@@ -215,8 +215,8 @@ export default function Projects() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: var(--accent);
+          border-color: var(--accent);
         }
 
         .card h3 {
@@ -258,21 +258,6 @@ export default function Projects() {
         cite::before {
           content: " — ";
           padding-right: 0.25em;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>

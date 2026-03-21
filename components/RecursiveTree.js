@@ -1,28 +1,28 @@
 import React, { useEffect, useRef } from "react";
+import { useTheme } from "./ThemeContext";
 
 export default function RecursiveTree({ containerRef }) {
   const canvasRef = useRef(null);
+  const theme = useTheme();
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    const isDark = theme === "dark";
     const ctx = canvas.getContext("2d");
-    
-    // Set canvas size
+
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
-      // Use container height if available, otherwise fallback to a large height
       if (containerRef?.current) {
         canvas.height = containerRef.current.scrollHeight;
       } else {
-        canvas.height = 3000; // Fallback height
+        canvas.height = 3000;
       }
     };
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
-    
-    // Also observe container size changes
+
     let resizeObserver;
     if (containerRef?.current) {
       resizeObserver = new ResizeObserver(() => {
@@ -34,54 +34,84 @@ export default function RecursiveTree({ containerRef }) {
     let animationId;
     let time = 0;
 
-    // Recursive tree drawing function
     function drawBranch(x, y, length, angle, depth, maxDepth, time) {
       if (depth > maxDepth) return;
 
-      // Calculate end point of branch
       const endX = x + Math.cos(angle) * length;
       const endY = y + Math.sin(angle) * length;
 
-      // Draw the branch
       const alpha = (maxDepth - depth + 1) / (maxDepth + 1);
-      const hue = (depth * 30 + time * 20) % 360;
-      ctx.strokeStyle = `hsla(${hue}, 70%, 60%, ${alpha * 0.6})`;
-      ctx.lineWidth = Math.max(0.5, (maxDepth - depth + 1) * 1.2);
-      
+      const hue = (depth * 45 + time * 20) % 360;
+      const lightness = isDark ? "75%" : "60%";
+      ctx.strokeStyle = `hsla(${hue}, 90%, ${lightness}, ${alpha * 0.8})`;
+      const widthScale = isDark ? 1.8 : 1.2;
+      ctx.lineWidth = Math.max(0.5, (maxDepth - depth + 1) * widthScale);
+
+      if (depth <= 3) {
+        ctx.shadowBlur = (maxDepth - depth) * 6;
+        ctx.shadowColor = `hsla(${hue}, 90%, ${lightness}, ${alpha * 0.9})`;
+      }
+
       ctx.beginPath();
       ctx.moveTo(x, y);
       ctx.lineTo(endX, endY);
       ctx.stroke();
 
-      // Recursive calls for branches
+      if (depth <= 3) {
+        ctx.shadowBlur = 0;
+      }
+
       if (depth < maxDepth) {
         const newLength = length * 0.7;
-        
-        // Create dynamic angle variations with time
+
         const angleVariation = Math.sin(time + depth * 0.5) * 0.3;
         const leftAngle = angle - 0.5 - angleVariation;
         const rightAngle = angle + 0.5 + angleVariation;
-        
-        // Main branches
-        drawBranch(endX, endY, newLength, leftAngle, depth + 1, maxDepth, time);
-        drawBranch(endX, endY, newLength, rightAngle, depth + 1, maxDepth, time);
+        const centerAngle = angle + Math.sin(time * 1.5 + depth) * 0.15;
+
+        drawBranch(
+          endX,
+          endY,
+          newLength,
+          leftAngle,
+          depth + 1,
+          maxDepth,
+          time,
+        );
+        drawBranch(
+          endX,
+          endY,
+          newLength * 0.85,
+          centerAngle,
+          depth + 1,
+          maxDepth,
+          time,
+        );
+        drawBranch(
+          endX,
+          endY,
+          newLength,
+          rightAngle,
+          depth + 1,
+          maxDepth,
+          time,
+        );
       }
     }
 
-    // Animation loop
+    ctx.fillStyle = isDark ? "#111" : "#fff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
     function animate() {
-      time += 0.002;
-      
-      // Clear canvas with fade effect
-      ctx.fillStyle = "rgba(255, 255, 255, 0.1)";
+      time += 0.0045;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = isDark ? "#111" : "#fff";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Draw single tree that spans content height
-      // Calculate initial length to scale with content height
-      const baseLength = canvas.height * 0.30;
-      const maxDepth = 10;
-      
-      // Single central tree growing downward from top
+      const baseLength = canvas.height * 0.3;
+      const maxDepth = 7;
+
       drawBranch(
         canvas.width / 2,
         0,
@@ -89,7 +119,7 @@ export default function RecursiveTree({ containerRef }) {
         Math.PI / 2,
         0,
         maxDepth,
-        time
+        time,
       );
 
       animationId = requestAnimationFrame(animate);
@@ -97,7 +127,6 @@ export default function RecursiveTree({ containerRef }) {
 
     animate();
 
-    // Cleanup
     return () => {
       window.removeEventListener("resize", resizeCanvas);
       cancelAnimationFrame(animationId);
@@ -105,7 +134,7 @@ export default function RecursiveTree({ containerRef }) {
         resizeObserver.disconnect();
       }
     };
-  }, [containerRef]);
+  }, [containerRef, theme]);
 
   return (
     <canvas
@@ -117,7 +146,6 @@ export default function RecursiveTree({ containerRef }) {
         width: "100%",
         height: "100%",
         zIndex: -1,
-        background: "white",
       }}
     />
   );

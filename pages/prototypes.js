@@ -113,7 +113,7 @@ export default function Prototypes() {
         }
 
         a {
-          color: #0070f3;
+          color: var(--accent);
           text-decoration: none;
         }
 
@@ -144,7 +144,7 @@ export default function Prototypes() {
         }
 
         code {
-          background: #fafafa;
+          background: var(--code-bg);
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
@@ -176,7 +176,7 @@ export default function Prototypes() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+          border: 1px solid var(--border);
           border-radius: 10px;
           transition:
             color 0.15s ease,
@@ -186,8 +186,8 @@ export default function Prototypes() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: var(--accent);
+          border-color: var(--accent);
         }
 
         .card h3 {
@@ -210,30 +210,6 @@ export default function Prototypes() {
             width: 100%;
             flex-direction: column;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>

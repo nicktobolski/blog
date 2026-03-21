@@ -114,6 +114,7 @@ export default function StrangeLoop() {
         
         .container {
           position: relative;
+          isolation: isolate;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
@@ -130,7 +131,7 @@ export default function StrangeLoop() {
         }
 
         a {
-          color: #0070f3;
+          color: var(--accent);
           text-decoration: none;
         }
 
@@ -177,7 +178,7 @@ export default function StrangeLoop() {
         .description {
           line-height: 1.5;
           font-size: 1rem;
-          color: #6e6e6e;
+          color: var(--secondary);
         }
 
         .grid {
@@ -203,30 +204,6 @@ export default function StrangeLoop() {
           .poem p {
             padding: 1rem 1.5rem;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>

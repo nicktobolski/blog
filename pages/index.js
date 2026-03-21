@@ -83,7 +83,7 @@ export default function Home() {
           max-width: 39rem;
         }
         a {
-          color: #0070f3;
+          color: var(--accent);
           text-decoration: none;
         }
 
@@ -114,7 +114,7 @@ export default function Home() {
         }
 
         code {
-          background: #fafafa;
+          background: var(--code-bg);
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
@@ -140,7 +140,7 @@ export default function Home() {
         }
         .wip {
           font-weight: bold;
-          color: #ccc;
+          color: var(--disabled);
         }
 
         .card {
@@ -150,7 +150,7 @@ export default function Home() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+          border: 1px solid var(--border);
           border-radius: 10px;
           transition:
             color 0.15s ease,
@@ -160,8 +160,8 @@ export default function Home() {
         a.card:hover,
         a.card:focus,
         a.card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: var(--accent);
+          border-color: var(--accent);
         }
 
         .card h2 {
@@ -185,30 +185,6 @@ export default function Home() {
             flex-direction: column;
             align-items: stretch;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>
