@@ -24,6 +24,15 @@ export default function Projects() {
         <h1 className="title">Words</h1>
 
         <div className="grid">
+          <a href="/agent-first-warning" className="card">
+            <>
+              <h2>A Warning to Agent-First Teams &rarr;</h2>
+              <p>
+                Here be dragons: the part of the map your guardrails don't
+                chart.
+              </p>
+            </>
+          </a>
           <a href="/strange-loop" className="card">
             <>
               <h2>I Am A Strange Loop &rarr;</h2>
