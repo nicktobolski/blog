@@ -14,8 +14,13 @@ export default function AgentFirstWarning() {
         <meta
           name="description"
           property="og:description"
-          content="Here be dragons: the part of the map your guardrails don't chart."
+          content="Here be dragons: the part of the map your guardrails don't chart. Written with Claude; conceived, outlined, and edited by Nick Tobolski."
           key="desc"
+        />
+        <meta
+          name="author"
+          content="Nick Tobolski, written with Claude"
+          key="author"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
