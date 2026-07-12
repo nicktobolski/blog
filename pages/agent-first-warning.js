@@ -408,6 +408,18 @@ export default function AgentFirstWarning() {
             coastline, and they chart it well. But the mapped territory was
             never where ships were lost.
           </p>
+
+          <p className="attribution">
+            ~ Written with{" "}
+            <a
+              href="https://claude.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Claude
+            </a>
+            ; conceived, outlined, and edited by Nick Tobolski
+          </p>
         </div>
       </main>
 
@@ -453,6 +465,13 @@ export default function AgentFirstWarning() {
         .title,
         .description {
           text-align: center;
+        }
+
+        .attribution {
+          font-style: italic;
+          font-size: 0.9rem;
+          color: var(--secondary);
+          margin-top: 2rem;
         }
 
         .subtitle {
