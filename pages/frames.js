@@ -25,6 +25,20 @@ export default function Projects() {
 
         <div className="grid">
           <blockquote>
+            When faced with a totally new situation, we tend always to attach
+            ourselves to the objects, to the flavor of the most recent past. We
+            look at the present through a rear view mirror. We march backwards
+            into the future.
+            <cite>Marshall McLuhan, The Medium is the Massage</cite>
+          </blockquote>
+
+          <blockquote>
+            Our reasonings grasp at straws for premises and float on gossamers
+            for deductions.
+            <cite>A.N. Whitehead, Adventures in Ideas</cite>
+          </blockquote>
+
+          <blockquote>
             If something is permitted by the laws of physics, then the only
             thing that can prevent it from being technologically possible is not
             knowing how.
@@ -47,7 +61,7 @@ export default function Projects() {
             could become typical in the future. If we want to, we could be that
             spark.
             <cite>
-              David Deutsch,The Beginning of Infinity: Explanations That
+              David Deutsch, The Beginning of Infinity: Explanations That
               Transform the World
             </cite>
           </blockquote>
@@ -59,7 +73,7 @@ export default function Projects() {
           </blockquote>
 
           <blockquote>
-            The first principal is that you must not fool yourself - and you're
+            The first principle is that you must not fool yourself - and you're
             the easiest person to fool.
             <cite>Richard Feynman</cite>
           </blockquote>
