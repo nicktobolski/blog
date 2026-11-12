@@ -33,12 +33,6 @@ export default function Projects() {
           </blockquote>
 
           <blockquote>
-            Our reasonings grasp at straws for premises and float on gossamers
-            for deductions.
-            <cite>A.N. Whitehead, Adventures in Ideas</cite>
-          </blockquote>
-
-          <blockquote>
             If something is permitted by the laws of physics, then the only
             thing that can prevent it from being technologically possible is not
             knowing how.
@@ -108,6 +102,12 @@ export default function Projects() {
             Live in the sunshine, swim the sea, drink the wild air. Nothing
             great was ever achieved without enthusiasm.
             <cite>Ralph Waldo Emerson</cite>
+          </blockquote>
+
+          <blockquote>
+            Our reasonings grasp at straws for premises and float on gossamers
+            for deductions.
+            <cite>A.N. Whitehead, Adventures in Ideas</cite>
           </blockquote>
           {/* <blockquote>
             We are made for goodness. We are made for love. We are made for
